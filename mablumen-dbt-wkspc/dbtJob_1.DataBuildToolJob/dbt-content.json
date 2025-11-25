@@ -22,6 +22,8 @@
     "operation": "build",
     "arguments": {
       "exclude": "",
+      "fullRefresh": true,
+      "failFast": true,
       "threads": 4
     }
   }
