@@ -5,15 +5,18 @@
   },
   "profile": {
     "profileType": "DataWarehouse",
-    "schema": "mablumen_jaffle_shop",
+    "schema": "jaffle_shop1",
+    "externalReferences": {
+      "connection": "db5f035e-3378-46a0-a81c-fbb5cffc4cd0"
+    },
     "connectionSettings": {
-      "name": "empty_warehouse",
+      "name": "mablumen-dbt-warehouse",
       "properties": {
         "type": "DataWarehouse",
         "typeProperties": {
-          "workspaceId": "33de8efc-5a72-4c37-b3fd-b7883420c2d2",
-          "artifactId": "7e03f948-6039-44d6-b3d2-2bdbaabe80c2",
-          "endPoint": "x6eps4xrq2xudenlfv6naeo3i4-7shn4m3sli3uzm75w6ediigc2i.daily-datawarehouse.fabric.microsoft.com"
+          "workspaceId": "4f756cb4-1f6e-45a1-bf44-2834b957b904",
+          "artifactId": "db5f035e-3378-46a0-a81c-fbb5cffc4cd0",
+          "endPoint": "x6eps4xrq2xudenlfv6naeo3i4-wrwhkt3od6qulp2efa2lsv5zaq.daily-datawarehouse.fabric.microsoft.com"
         }
       }
     }
@@ -22,6 +25,8 @@
     "operation": "build",
     "arguments": {
       "exclude": "",
+      "fullRefresh": true,
+      "failFast": true,
       "threads": 4
     }
   }
